@@ -113,6 +113,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0)
+  execjs
   jquery-rails
   pg
   rails (= 3.1.0)
