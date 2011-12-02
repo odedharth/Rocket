@@ -12,24 +12,16 @@ if RUBY_VERSION =~ /1.9/
     Encoding.default_external = Encoding::UTF_8
     Encoding.default_internal = Encoding::UTF_8
 end
-group :production do
-  # gems specifically for Heroku go here
   gem "pg"
-end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-
-end
-
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
+end
 
 gem 'jquery-rails'
-
-gem 'execjs'
 
 # Use unicorn as the web server
 # gem 'unicorn'
