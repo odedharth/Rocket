@@ -12,6 +12,10 @@ if RUBY_VERSION =~ /1.9/
     Encoding.default_external = Encoding::UTF_8
     Encoding.default_internal = Encoding::UTF_8
 end
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
