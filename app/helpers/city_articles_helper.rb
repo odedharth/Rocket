@@ -1,0 +1,2 @@
+module CityArticlesHelper
+end

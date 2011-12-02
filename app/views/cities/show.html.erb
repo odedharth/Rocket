@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @city.name %>
+</p>
+
+<p>
+  <b>Population:</b>
+  <%= @city.population %>
+</p>
+
+
+<p>
+<% @city.articles.each do |a| %>
+<%= a.link %>
+<% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_city_path(@city) %> |
+<%= link_to 'Back', cities_path %>
